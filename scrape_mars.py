@@ -11,8 +11,8 @@ def scrape():
     # https://splinter.readthedocs.io/en/latest/drivers/chrome.html
     #!which chromedriver
 
-    executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
-    browser = Browser('chrome', **executable_path, headless=True)
+    executable_path = {'executable_path': '../../chromedriver.exe'}
+    browser = Browser('chrome', **executable_path, headless=False)
 
 
     
