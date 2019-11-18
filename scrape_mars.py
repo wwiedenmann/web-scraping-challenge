@@ -83,9 +83,9 @@ def mars_facts():
     df.set_index('Property', inplace=True)
     
     # Convert to HTML table string and return
-    df.to_html()
-    df.replace('\n', '')
-    return df
+    return df.to_html()
+    #df.replace('\n', '')
+    #return df
     
 def mars_hemis(browser):
     url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
@@ -128,7 +128,3 @@ def mars_hemis(browser):
         browser.back()
   
     return hemisphere_image_urls
-
-
-
-
